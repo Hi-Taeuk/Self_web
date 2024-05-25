@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taeuk Kim website</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            display:none;
+        }  
+        section:target{
+            display:block;
+        } 
+        .top_bar{
+            background: #00BFFF;
+            color: #000080;
+            position: fixed;
+            left: 0; top: 0; right: 0;
+            height: 80px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top_bar a{
+            margin-left:20px;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        #main{
+            font-size: 35px;
+            font-weight: bold;
+            padding-left:25px;
+        }
+        .self_1{
+            padding-top: 120px;
+            background-color:#f1eded;
+            text-align: center;
+            margin-left:200px;
+        }
+        #uni{
+            font-size: 30px;
+        }
+        #second_photo{
+            width:500px;
+            height:500px;
+            margin-top:12px;
+            margin-bottom: 12px;
+        }
+        a{
+            text-decoration: none;
+            color:inherit;
+        }
+        #greet{
+            font-size:120%;
+        }
+        .self_2{
+            text-align: left;
+            margin-left:320px;
+            margin-top:50px;
+            margin-bottom: 100px;
+            display:flex;
+            align-items: center;
+        }
+        .nav_button{
+            text-align: right;
+        }
+        header {
+            background: #ADD8E6;
+            color: #000080;
+            position: fixed;
+            text-align: center;
+            left: 0; top: 80px; right:0;
+            width: 240px;
+            height: 100%;
+        }
+        .container{
+            padding-top:120px;
+        }
+        #main_name{
+            font-size:30px;
+        }
+        #first_photo{
+            width: 150px;
+            height: 180px;
+            top: 100px;
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+        #self{
+            font-size:15px;
+        }
+        .nav_button{
+            text-align: center;
+            margin-top:100px;
+        }
+        .icon{
+            width:50px;
+            height:50px;
+
+        }
+        #major{
+            font-size:25px;
+            flex:1;
+        } 
+        #major_sub{
+            font-size:20px;
+        }
+        #major_image{
+            width:500px;
+            height:auto;
+            margin-left:100px;
+        }
+        #major2_image{
+            width:400px;
+            height:300px;
+            margin-left:100px;
+        }
+        .bottom_bar{
+            background-color: #80B5FF;
+            position:fixed;
+            bottom:0;
+            left: 240px;
+            right:0px;
+            height:40px;
+            font-size:25px;
+            text-align: center;
+        }
+        .bottom_bar a{
+            margin-right: 60px;
+            background-color: #000080;
+            color:white;
+            border-radius: 10px;
+            line-height:40px;
+        }
+        .activity1{
+            background-color: #f1eded;
+            text-align: left;
+            padding-left:320px;
+            padding-top:50px;
+            padding-bottom: 100px;
+            display:flex;
+            align-items: center;
+        }
+        #spy_image{
+            width:500px;
+            height:auto;
+            margin-left:180px;
+            margin-top:50px;
+        }
+        .activity2{
+            text-align: left;
+            padding-left:320px;
+            padding-top:50px;
+            padding-bottom: 100px;
+            display:flex;
+            align-items: center;
+        }
+        #zelda_image{
+            width:600px;
+            height:400px;
+            margin-left:100px;
+            margin-top:50px; 
+        }
+        #soccer_image{
+            width:520px;
+            height:auto;
+            margin-left:80px;
+            margin-top:50px;
+        }
+        .hometown1{
+            background-color: #f1eded;
+            text-align: left;
+            padding-left:320px;
+            padding-top:50px;
+            padding-bottom: 80px;
+            display:flex;
+            align-items: center;
+        }
+        #major2{
+            font-size:30px;
+        }
+        #incheon_image{
+            width:700px;
+            height:auto;
+            margin-left:80px;
+            margin-top:50px;
+            margin-right:50px;
+        }
+        #airport_image{
+            width:700px;
+            height:auto;
+            margin-left:80px;
+            margin-top:50px;
+            margin-right:50px;
+        }
+        #china_image{
+            width:700px;
+            height:auto;
+            margin-left:80px;
+            margin-top:50px;
+            margin-right:50px;
+        }
+        #bupyeong_image{
+            width:700px;
+            height:auto;
+            margin-left:80px;
+            margin-top:50px;
+            margin-right:50px;
+        }
+
+        @media screen and (max-width: 1366px) {
+        .self_1 {
+            flex-direction: column; 
+            align-items: center;
+        }
+        .self_2 {
+            flex-direction: column; 
+            align-items: center; 
+        }
+        #major_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #major2_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .activity1{
+            flex-direction: column; 
+            align-items: center;
+            margin-top:50px;
+        }
+        .activity2{
+            flex-direction: column; 
+            align-items: center; 
+        }
+        #spy_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #zelda_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto; 
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #soccer_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .hometown1 {
+            flex-direction: column; 
+            align-items: center;
+            margin-top:50px;
+            display:flex;
+        }
+        #incheon_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #airport_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        #china_image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto; 
+        }
+        #bupyeong_image {
+            max-width: 100%;
+            height: auto;
+            padding-right:auto;
+            padding-left:auto;
+            margin-right:auto;
+            margin-left:auto;
+        }
+    }
+        @media screen and (max-width: 1023px){
+            header{
+                width:160px;
+            }
+            .bottom_bar{
+                left:160px;
+            }
+            .self_1{
+                margin-left:160px;
+            }
+            .self_2{
+                margin-left:170px;
+            }
+            .activity1{
+                padding-left:170px;
+            }
+            .activity2{
+                padding-left:170px;
+            }
+            .hometown1{
+                padding-left:170px;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            header {
+                display: none; 
+            }
+            .bottom_bar{
+                left:0px;
+            }
+            .self_1{
+                margin-left:0px;
+            }
+            .self_2{
+                margin-left:0px;
+                padding-left:10px;
+            }
+            .activity1{
+                margin-left:0px;
+                padding-left:10px;
+            }
+            .activity2{
+                margin-left:0px;
+                padding-left:10px;
+            }
+            .hometown1{
+                margin-left:0px;
+                padding-left:10px;
+            }
+
+        }
+        </style>
+        <script>
+            window.onload = function() {
+              window.location.href = "#home";
+            };
+
+            window.onresize = function() {
+              if (window.innerWidth <= 700) {
+                document.getElementById('main').innerText = "Taeuk Kim";
+              } else {
+                document.getElementById('main').innerText = "Taeuk Kim website";
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="top_bar">
+            <h1 id="main"><a href="#home">Taeuk Kim website</a></h1>
+            <div>
+                <a href="#home" id="#linkes">Home</a>
+                <a href="#activity" id="#linkes">Hobby</a> 
+                <a href="#hometown" id="#linkes">Incheon</a>
+            </div>
+        </div>
+        <section id="home">
+        <div class="self_1">
+            <h1 id="uni">Kangwon National University</h1>
+            <img id="second_photo" src="IMG_1875.jpg">
+            <p id="greet">*I am majoring in Department of Japanese Studies <br> and double majoring in Data Science at Kangwon National University.<br>
+            I plan to continue studying Japanese and IT, <br> and get a job in development or overseas sales and marketing at an IT company.</p><br><br><br>
+        </div>
+        <div class="self_2">
+            <div>
+            <h2 id="major">※ Department of Japanese Studies</h2>
+            <p id="major_sub">The Department of Japanese Studies at Kangwon National University is comprised of a curriculum <br>
+            that focuses on major areas divided into five areas: Japanese language, Japanese literature, <br>
+            Japanese history, Japanese thought, and Japanese political economy.
+            </p>
+            </div>
+            <img id="major_image" src="japan.png">
+        </div><hr>
+        <div class="self_2">
+            <div>
+                <h2 id="major">※ Department of Data Science</h2>
+                <p id="major_sub">Data science is an interdisciplinary field of study that is difficult to cover through a single traditional curriculum,<br> 
+                    and requires talent with a variety of humanities knowledge, such as business administration and psychology, <br>
+                    in addition to natural science and engineering knowledge such as computer engineering and statistics. <br>
+                    Based on the convergence of humanities and IT technology, <br>
+                    we aim to cultivate creative and practical convergence talents through systematic practice courses <br>
+                    and practice-oriented project-based education through industry linkages.</p>
+                </p>
+            </div>
+            <img id="major2_image" src="data.jpg">
+        </div>
+        </section> 
+        <header>
+            <div class="container">
+                <h1 id="main_name">Taeuk Kim</h1>
+                <div>
+                <img id="first_photo" src="IMG_0539.JPG">
+                </div>
+                <p id="self">My name is Taeuk Kim.<br> 
+                    I am a student in the 21st year of Kangwon National University. </p>
+                <nav class="nav_button">
+                    <a href="#home"><img class="icon" src="home_button.png"></a>
+                    <a href="#activity"><img class="icon" src="activity_button.png"></a>
+                    <a href="#hometown"><img class="icon" src="hometown_button.png"></a>
+                </nav>
+            </div>
+        </header>
+        <div class="bottom_bar">
+            <a href="https://wwwk.kangwon.ac.kr/">&nbsp; kangwon university &nbsp;</a>
+            <a href="https://www.incheon.go.kr/">&nbsp; Incheon &nbsp;</a>
+        </div>
+        <section id="activity">
+            <div class="activity1">
+                <div>
+                <h2 id="major">※ Anime </h2>
+                <p id="major_sub">It tells the story of a spy who infiltrates a foreign country<br>
+                    and is ordered to form a family for a mission.<br>
+                    He starts a family with an assassin woman and a girl with supernatural powers<br>
+                    and struggles to hide each other's identities and live a "normal life as a family."<Br>
+                </p>
+                </div>
+                <img id="spy_image" src="spy.png">
+            </div>
+            </div>
+            <div class="activity2">
+                <div>
+                <h2 id="major">※ Game </h2>
+                <p id="major_sub">100 years ago, Calamity Ganon was resurrected and attacked Hyrule Castle.<br>
+                    The young girls representing each race, the princess Zelda,<br>
+                    and the warrior Link tried to stop Ganon,<br> 
+                    but all the young girls except Link were killed in front of Ganon's powerful power,<br>
+                    and even Link was seriously injured. Afterwards, <br>
+                    the princess seals Ganon in Hyrule Castle with her own power.<br>
+                    One day, 100 years later, Link woke up in a mysterious place with no memory.<br>
+                </p>
+                </div>
+                <img id="zelda_image" src="zelda.png">
+            </div>
+            </div>
+            <div class="activity1">
+                <div>
+                <h2 id="major">※ Sports(Soccer) </h2>
+                <p id="major_sub">I usually like playing soccer and watching EPL games.<br>
+                    I don't have a team in particular that I support,<br>
+                    but I watch a lot of famous teams' games <br>
+                    and watch the Champions League and World Cup without fail.<br>
+                    When I play soccer, I usually play the role of midfielder. <br>
+                    I have more fun making kill passes than scoring goals, and I seem to enjoy soccer more.<br>
+                </p>
+                </div>
+                <img id="soccer_image" src="soccer.png">
+            </div>
+            </div>
+        </section>
+        <section id="hometown">
+            <div class="hometown1">
+                <div>
+                    <h2 id="major2">※ Incheon, the international city of Northeast Asia </h2>
+                    <p id="major_sub">A metropolitan city in South Korea. It is the outer port of Seoul, the capital city.<br>
+                    It is located in northwestern South Korea and the central western part of the Korean Peninsula.<br> 
+                    It is the second largest port city after Busan, the largest coastal city in the metropolitan area,<br> 
+                    and the third local government. It is the third most populous metropolitan government after Seoul and Busan.<br>
+                    With Incheon International Airport and Incheon Port International Passenger Terminal,<br> 
+                    it is the first stop for most foreign travelers visiting Korea.<br> 
+                    Incheon International Airport is connected to countries on the world's major continents, <br> 
+                    including Asia, America, Europe, Oceania, and Africa, and Incheon Port is mainly connected to China. <br>
+                    The eponymous tree is a tree lily, the eponymous flower is a rose, and the ancestral ancestor is a crane. <br>
+                    The crane is known as a bird with a deep connection to Incheon, with many regions in the Incheon region having the name 'crane', <br> 
+                    and it also served as the motif for UT, the mascot of Incheon United in the K League. However, <br>
+                    due to the destruction of the ecosystem caused by urban development in Incheon, cranes disappeared from mainland Incheon, <br> 
+                    and about 10 cranes arrive every year in Ganghwa-gun, far away from the city. <br>
+                </p>
+                </div>
+                <div>
+                <img id="incheon_image" src="incheon.png">
+            </div>
+            </div>
+            <div class="activity2">
+                <div>
+                <h2 id="major2">※ Incheon International Airport  </h2>
+                <p id="major_sub">Incheon International Airport is Korea's central airport, <br>
+                    located at 272 Gonghang-ro and 446 Airport Terminal-daero, Jung-gu, Incheon,<br> 
+                    in accordance with the Seoul Metropolitan Area New Airport Construction Promotion Act. <br> 
+                    It opened on March 29, 2001, taking over the international function of Gimpo International Airport. <br>
+                    It is the largest airport in Korea and is considered the gateway to Korea <br>
+                    in that most major international flights are connected through this airport. In addition, <br> 
+                    it is a world-class airport that has consistently ranked at the top in various indicators for airports around the world <br>
+                    since its opening.
+                </p>
+                </div>
+                <img id="airport_image" src="airport.jpg">
+            </div>
+            </div>
+            <div class="hometown1">
+                <div>
+                    <h2 id="major2">※ Chinatown in Incheon! </h2>
+                    <p id="major_sub">It is loved as a landmark tourist destination that represents Incheon Metropolitan City 
+                        and Jung-gu in name and reality. When you say 'Chinatown' in Korea, many people choose this place. 
+                        There are Chinatowns in Seoul, Busan, and Daegu, 
+                        but Incheon's Chinatown is overwhelmingly large and is known as Korea's representative Chinatown 
+                        because it is the birthplace of Jjajangmyeon, a representative Chinese food in Korea.
+                </p>
+                </div>
+                <div>
+                <img id="china_image" src="china.jpg">
+            </div>
+            </div>
+            <div class="activity2">
+                <div>
+                <h2 id="major2">※ Most shops on an underground floor! Bupyeong </h2>
+                <p id="major_sub">It is an underground shopping mall with a world record. <br>
+                    To be precise, it held the record for ‘the largest number of stores opened in an underground space within <br>
+                    a single space.’ In May 2014, it was recognized as the single building with the most stores <br>
+                    in Korea by the Korea Record Institute, and in October 2014, it was recognized as a world record. <br>
+                    The number of stores was 1,408 as of May 2, 2014. If you actually go there, you can see that <br>
+                    there are a lot of stores attached to each other and you can feel that there are quite a lot of them. <br>
+                </p>
+                </div>
+                <img id="bupyeong_image" src="bupyeong.png">
+            </div>
+            </div>
+        </section>
+    </body>
+</html>
