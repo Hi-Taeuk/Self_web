@@ -349,9 +349,6 @@
             header {
                 display: none; 
             }
-            .bottom_bar{
-                left:0px;
-            }
             .self_1{
                 margin-left:0px;
             }
@@ -371,7 +368,19 @@
                 margin-left:0px;
                 padding-left:10px;
             }
-
+            #second_photo{
+                max-width: 80%;
+                height:auto;
+            }
+            .bottom_bar{
+                left:0px;
+                font-size:18px;
+                padding-left:27px;
+            }
+            #main{
+                padding-right:100px;
+                padding-left:5px;
+            }
         }
         </style>
         <script>
@@ -382,8 +391,10 @@
             window.onresize = function() {
               if (window.innerWidth <= 700) {
                 document.getElementById('main_link').innerText = "Taeuk Kim";
+                document.getElementById('main_link').style.fontSize = "23px";
               } else {
                 document.getElementById('main_link').innerText = "Taeuk Kim website";
+                document.getElementById('main_link').style.fontSize = "35px";
               }
             }
         </script>
