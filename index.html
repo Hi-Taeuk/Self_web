@@ -34,7 +34,9 @@
             margin-right: 20px;
             font-weight: bold;
         }
-
+        .icon_links {
+            display: none;
+        }
         #main{
             font-size: 35px;
             font-weight: bold;
@@ -381,6 +383,17 @@
                 padding-right:100px;
                 padding-left:5px;
             }
+            .text_links {
+                display: none;
+            }
+            .icon_links {
+                display: flex; 
+             }
+             .icon_links .icon {
+                width: 20px; 
+                height: 20px; 
+                margin: 0px; 
+            }
         }
         </style>
         <script>
@@ -406,6 +419,11 @@
                 <a href="#home" id="#linkes">Home</a>
                 <a href="#activity" id="#linkes">Hobby</a> 
                 <a href="#hometown" id="#linkes">Incheon</a>
+            </div>
+            <div class="icon_links">
+                <a href="#home"><img class="icon" src="home_button.png" alt="Home"></a>
+                <a href="#activity"><img class="icon" src="activity_button.png" alt="Hobby"></a>
+                <a href="#hometown"><img class="icon" src="hometown_button.png" alt="Incheon"></a>
             </div>
         </div>
         <section id="home">
