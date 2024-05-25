@@ -38,7 +38,7 @@
         #main{
             font-size: 35px;
             font-weight: bold;
-            padding-left:25px;
+            padding-left:15px;
         }
         .self_1{
             padding-top: 120px;
@@ -135,7 +135,7 @@
             text-align: center;
         }
         .bottom_bar a{
-            margin-right: 60px;
+            margin-right: 50px;
             background-color: #000080;
             color:white;
             border-radius: 10px;
@@ -381,16 +381,16 @@
 
             window.onresize = function() {
               if (window.innerWidth <= 700) {
-                document.getElementById('main').innerText = "Taeuk Kim";
+                document.getElementById('main_link').innerText = "Taeuk Kim";
               } else {
-                document.getElementById('main').innerText = "Taeuk Kim website";
+                document.getElementById('main_link').innerText = "Taeuk Kim website";
               }
             }
         </script>
     </head>
     <body>
         <div class="top_bar">
-            <h1 id="main"><a href="#home">Taeuk Kim website</a></h1>
+            <h1 id="main"><a href="#home" id="main_link">Taeuk Kim website</a></h1>
             <div>
                 <a href="#home" id="#linkes">Home</a>
                 <a href="#activity" id="#linkes">Hobby</a> 
